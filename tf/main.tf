@@ -42,8 +42,8 @@ resource "openstack_networking_secgroup_rule_v2" "sg_sql_rule" {
   security_group_id = openstack_networking_secgroup_v2.sg.id
 }
 
-resource "openstack_compute_instance_v2" "task_manager_tg" {
-  name        = "task_manager_tg"
+resource "openstack_compute_instance_v2" "task_managerN_tg" {
+  name        = "task_managerN_tg"
   image_name  = var.image_name
   flavor_name = var.flavor_name
   key_pair = var.key_pair
